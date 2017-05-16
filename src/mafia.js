@@ -9,8 +9,7 @@ class MafiaGame {
 
     loadDB() {
         this.bot.db.get('mafia').then(mafia_data => {
-            this.data = mafia_data || {};
-
+            this.data = JSON.parse(mafia_data) || {};
             if (this.data.eod) {
                 if (this.data.eod.time) {
                     this.data.eod.time = moment(this.data.eod.time);
@@ -21,17 +20,13 @@ class MafiaGame {
                 this.data.eod = {};
                 this.data.eod.time = null;
             }
-
             this.loaded = true;
-
         });
     }
 
     saveDB() {
-        // TODO: NO SAVING AHHHHHHHH!
-
-        // NOTE: bot.mafia.data.eod.time.toJSON()
-        return;
+        if (this.loaded)
+            this.bot.db.put('mafia', JSON.stringify(this.data)).catch(console.error());
     }
 
     buildVoteTable() {
