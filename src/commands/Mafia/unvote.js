@@ -1,7 +1,5 @@
 exports.run = function (bot, msg) {
-    let channels = bot.mafia.channels;
-
-    if (channels.indexOf(msg.channel.id) > -1) {
+    if (bot.mafia.isMonitoredChannel(msg.channel.id)) {
         if (typeof bot.mafia.data.votes === 'undefined') {
             bot.mafia.data.votes = [];
         }
@@ -10,7 +8,7 @@ exports.run = function (bot, msg) {
 
         bot.mafia.saveDB();
 
-        let output = bot.mafia.buildVoteOutput();
+        let output = bot.mafia.voteCountOutput();
         if (output) {
             msg.channel.send(output);
         }

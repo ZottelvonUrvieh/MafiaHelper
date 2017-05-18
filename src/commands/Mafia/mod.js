@@ -1,27 +1,28 @@
 const RichEmbed = require('discord.js').RichEmbed;
 
 exports.run = function (bot, msg, args) {
-    if (!msg.member.hasPermission('ADMINISTRATOR') && (bot.mafia.data.mods.indexOf(msg.author.id) < 0)) {
+    if (!msg.member.hasPermission('ADMINISTRATOR') && !bot.mafia.isMod(msg.author.id)) {
         msg.channel.send(':negative_squared_cross_mark:  |  You are not a game moderator.');
         return;
     }
 
     let output = [];
 
-    // TODO: Abstract this to mafia
+    // TODO: Needs more abstraction.
+
     if (typeof bot.mafia.data.mods === 'undefined') {
         bot.mafia.data.mods = [];
     }
 
     if (args.length < 1) {
-        let mod_mentions = bot.mafia.data.mods.map(uid => `<@${uid}>`);
+        let mod_mentions = bot.mafia.getModsID().map(uid => `<@${uid}>`);
 
         output = new RichEmbed()
             .setColor(bot.utils.randomColor())
             .setTitle('Mafia Mods:')
             .setDescription(mod_mentions.join('\n'));
 
-        msg.channel.sendEmbed(output);
+        msg.channel.send('', {embed: output});
         return;
     }
 
