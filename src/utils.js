@@ -1,5 +1,24 @@
 const bot = require('./bot');
 const RichEmbed = require('discord.js').RichEmbed;
+const fse = require('fs-extra');
+const path = require('path');
+
+exports.readJSON = function (filename) {
+    try {
+        console.log(__dirname + '../' + filename);
+        return fse.readJsonSync(path.join(__dirname, '../' + filename));
+    }
+    catch (err) {
+        if (err.name === 'SyntaxError') {
+            bot.logger.severe('Configuration file is not valid JSON. Please verify it\'s contents.');
+        } else if (err.code === 'ENOENT') {
+            bot.logger.severe('Configuration not found. Make sure you copy config.json.example to config.json and fill it out.');
+        } else {
+            bot.logger.severe('Unknown error loading configuration file:');
+            bot.logger.severe(err);
+        }
+    }
+};
 
 exports.randomSelection = (choices) => {
     return choices[Math.floor(Math.random() * choices.length)];

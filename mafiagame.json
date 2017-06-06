@@ -1,0 +1,162 @@
+{
+  "roles": {
+    "town": {
+      "Sheriff": {
+        "name":         "Sheriff",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😀",
+        "label":        "required",
+        "uniqueness":   "unique"
+      },
+      "Doctor": {
+        "name":         "Doctor",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😬",
+        "label":       "town_protective",
+        "uniqueness":  "unique"
+      },
+      "Jailkeeper": {
+        "name":         "Jailkeeper",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😁",
+        "label":       "town_protective",
+        "uniqueness":  "unique"
+      },
+      "Bodyguard": {
+        "name":         "Bodyguard",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😂",
+        "label":       "town_protective",
+        "uniqueness":  "unique"
+      },
+      "Escord": {
+        "name":         "Escord",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😅",
+        "label":       "town_supoort",
+        "uniqueness":  "multiple"
+      },
+      "Medium": {
+        "name":         "Medium",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😄",
+        "label":       "town_support",
+        "uniqueness":  "unique"
+      },
+      "Citizen": {
+        "name":         "Citizen",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😆",
+        "label":        "citizen",
+        "uniqueness":  "multiple"
+      },
+      "Random Town": {
+        "name":         "A random town member",
+        "description":  "Uniqueness here determens the max value of how many of the random townies are allowed to roll as citizen",
+        "emoji":        "🙃",
+        "label":        "multiple",
+        "uniqueness":   "1"
+      }
+    },
+    "mafia": {
+      "Godfather": {
+        "name":         "Godfather",
+        "description":  "You are in the Mafia.\n\nEach night you may talk with the other Mafia members in the Mafia chat, and decide which of you will perform the Factional Kill, and who to kill.\nYou are Night Immune.\nYou will appear as Innocent to all investigative roles (eg. Sheriff).",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😇",
+        "label":       "required",
+        "uniqueness":  "unique"
+      },
+      "Consort": {
+        "name":         "Consort",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😉",
+        "label":        "mafia",
+        "uniqueness":   "multiple"
+      },
+      "Consigliere": {
+        "name":         "Consigliere",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😙",
+        "label":        "mafia",
+        "uniqueness":   "unique"
+      },
+      "Janitor": {
+        "name":         "Janitor",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😗",
+        "label":        "mafia",
+        "uniqueness":   "unique"
+      },
+      "Mafioso": {
+        "name":         "Mafioso",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😘",
+        "label":        "mafia",
+        "uniqueness":   "unique"
+      }
+    },
+    "neutral": {
+      "Jester": {
+        "name":         "Jester",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😍",
+        "label":        "neutral",
+        "uniqueness":   "multiple"
+      },
+      "Executioner": {
+        "name":         "Executioner",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😌",
+        "label":        "neutral",
+        "uniqueness":   "multiple"
+      },
+      "Witch": {
+        "name":         "Witch",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "😋",
+        "label":        "neutral",
+        "uniqueness":   "multiple"
+      },
+      "Serial Killer": {
+        "name":         "Serial Killer",
+        "description":  "Each day you get to vote in an attempt to remove the Mafia from the community.\n\nYou have no special abilities.\nYou win with the Town\nYou must kill the Witch\nYou must kill the Mafia\nYou must kill the Serial Killer\nYou may spare anyone else",
+        "rolecard":     "https://cdn.discordapp.com/attachments/298183916295159818/310929705257795584/unknown.png",
+        "emoji":        "🔫",
+        "label":        "required",
+        "uniqueness":   "unique"
+      }
+    }
+},
+  "messages": {
+    "custom"     : {"emoji": "📧", "text": "Click this to add a custom message.\n"},
+    "reset"      : {"emoji": "♻",  "text": "Reset the content of this message\n"},
+    "peace"      : {"emoji": "☮",  "text": "You slept peacefully.\n"},
+    "roleblocked": {"emoji": "🚫", "text": "You got rolebocked last night.\n"},
+    "jailed"     : {"emoji": "🏰", "text": "You were jailed last night.\n"},
+    "controlled" : {"emoji": "💫", "text": "You got controlled by a Witch last night.\n"},
+    "mafia_kill" : {"emoji": "💀", "text": "You got killed by the Mafia last night.\n"},
+    "sk_kill"    : {"emoji": "🔫", "text": "You got killed by the Serial Killer last night\n"},
+    "immune"     : {"emoji": "👎", "text": "Your target was immune to your attack.\n"},
+    "bodyguarded": {"emoji": "💪", "text": "Your target was protected by the Bodyguard and you were killed by them last night.\n\n"}
+  },
+  "dialog": {
+    "yes" : {"emoji": "✅",  "text": "**You have 30 minutes to use this menu then it will time out!\nIf you are satisfied with the messages click the  ✅ below this message to send all (not empty) messages out.**\n"},
+    "no"  : {"emoji": "🇽", "text": "**To cancel/deniy click the 🇽**\n"},
+    "load": {"emoji": "",   "text": "**Load previous configuration**\n"}
+  }
+}
